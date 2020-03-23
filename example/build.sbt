@@ -2,8 +2,8 @@ enablePlugins(ScalaJSBundlerPlugin)
 
 name := "react-apollo-scalajs-example"
 
-libraryDependencies += "me.shadaj" %%% "slinky-web" % "0.6.0"
-libraryDependencies += "me.shadaj" %%% "slinky-hot" % "0.6.0"
+libraryDependencies += "me.shadaj" %%% "slinky-web" % "0.6.4"
+libraryDependencies += "me.shadaj" %%% "slinky-hot" % "0.6.4"
 
 npmDependencies in Compile += "react" -> "16.8.4"
 npmDependencies in Compile += "react-dom" -> "16.8.4"
@@ -22,7 +22,6 @@ npmDevDependencies in Compile += "copy-webpack-plugin" -> "4.2.0"
 
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 
-addCompilerPlugin("org.scalamacros" % "paradise" % "2.1.0" cross CrossVersion.full)
 
 webpackConfigFile in fastOptJS := Some(baseDirectory.value / "webpack-fastopt.config.js")
 webpackConfigFile in fullOptJS := Some(baseDirectory.value / "webpack-opt.config.js")

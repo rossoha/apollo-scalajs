@@ -2,8 +2,8 @@ enablePlugins(ScalaJSBundlerPlugin)
 
 resolvers in Global += Resolver.sonatypeRepo("releases")
 
-libraryDependencies += "org.scalatest" %%% "scalatest" % "3.0.3" % Test
-libraryDependencies += "me.shadaj" %%% "slinky-web" % "0.6.0" % Test
+libraryDependencies += "org.scalatest" %%% "scalatest" % "3.3.0-SNAP2" % Test
+libraryDependencies += "me.shadaj" %%% "slinky-web" % "0.6.4" % Test
 
 npmDependencies in Test += "react" -> "16.8.4"
 npmDependencies in Test += "react-dom" -> "16.8.4"
@@ -15,7 +15,6 @@ npmDependencies in Compile += "graphql" -> "14.0.2"
 
 npmDependencies in Compile += "unfetch" -> "2.1.1"
 
-jsDependencies += RuntimeDOM % Test
 
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 

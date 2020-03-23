@@ -1,8 +1,8 @@
 organization in ThisBuild := "com.apollographql"
 
-scalaVersion in ThisBuild := "2.12.8"
+scalaVersion in ThisBuild := "2.13.1"
 
-scalacOptions in ThisBuild ++= Seq("-feature", "-deprecation")
+scalacOptions in ThisBuild ++= Seq("-feature", "-deprecation", "-Ymacro-annotations")
 
 licenses in ThisBuild += ("MIT", url("http://opensource.org/licenses/MIT"))
 
